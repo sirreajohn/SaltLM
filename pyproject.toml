@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.12.0",
     "argilla>=2.8.0",
+    "bitsandbytes>=0.49.1",
     "datasets>=4.5.0",
     "huggingface>=0.0.1",
     "ipykernel>=7.1.0",

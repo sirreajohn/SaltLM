@@ -12,3 +12,4 @@ wheels/
 # custom
 .env
 data/
+.vscode/
