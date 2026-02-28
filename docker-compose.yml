@@ -1,0 +1,38 @@
+services:
+  # llm:
+  #   image: ghcr.io/ggml-org/llama.cpp:server
+  #   volumes:
+  #     - ./models:/models
+  #   command: >
+  #     -m /models/qwen_2.5_7b_instruct_4bit/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf
+  #     --host 0.0.0.0
+  #     --port 8080
+  #     -t 8
+  #     -c 2048
+  #     -n 128
+  #   ports:
+  #     - "8080:8080"
+
+  tts:
+    build: ./services/tts
+    ports:
+      - "8001:8001"
+
+  asr:
+    build: ./services/asr
+    ports:
+      - "8002:8002"
+
+  # orchestrator:
+  #   build: ./services/orchestrator
+  #   ports:
+  #     - "8000:8000"
+  #   depends_on:
+  #     - llm
+  #     - tts
+
+
+
+
+
+

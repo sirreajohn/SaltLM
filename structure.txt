@@ -1,0 +1,24 @@
+assistant/
+│
+├── services/
+│   ├── llm/
+│   │   ├── Dockerfile
+│   │   └── entrypoint.sh
+│   │
+│   ├── tts/
+│   │   ├── Dockerfile
+│   │   ├── app.py
+│   │   └── requirements.txt
+│   │
+│   └── orchestrator/
+│       ├── Dockerfile
+│       ├── app.py
+│       └── requirements.txt
+│
+├── models/
+│   └── qwen2.5-7b-instruct-q4_k_m.gguf
+│
+├── docker-compose.yml
+│
+├── .env
+└── README.md
